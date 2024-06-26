@@ -1,14 +1,14 @@
-
-README.md
-Overview
+****README.md****
+**Overview**
 This README outlines the steps required to set up a data pipeline that fetches news from Finnhub, stores it in MongoDB Atlas, analyzes the news data, and loads the results into a PostgreSQL database. The entire process is scheduled and managed using Apache Airflow.
 
-Prerequisites
+**Prerequisites**
 Finnhub Account: Sign up for a Finnhub account to obtain an API key. Finnhub API Documentation
 MongoDB Atlas: Sign up or log in to MongoDB Atlas and create a cluster or use an existing cluster. MongoDB Atlas
 Docker: Ensure Docker is installed on your system.
 PostgreSQL: Ensure PostgreSQL is installed and accessible.
-Steps
+
+**Steps**
 Finnhub Account Setup:
 
 Sign up for a Finnhub account and obtain your API key from Finnhub.
@@ -31,8 +31,8 @@ Python Code for Analyzing News and Loading to PostgreSQL:
 Write a Python script to analyze the news data stored in MongoDB Atlas and load the results into the PostgreSQL database.
 Scheduling with Airflow:
 
-Create Airflow DAGs to schedule the execution of the Python scripts for loading news into MongoDB and for analyzing the news and loading the results into PostgreSQL.
-Detailed Instructions
+**Create Airflow DAGs to schedule the execution of the Python scripts for loading news into MongoDB and for analyzing the news and loading the results into PostgreSQL.
+Detailed Instructions**
 1. Sign Up for Finnhub
 Go to the Finnhub sign-up page and create an account.
 Retrieve your API key from the Finnhub dashboard.
@@ -55,5 +55,6 @@ Load the analyzed data into the PostgreSQL database.
 7. Schedule Tasks with Airflow
 Create Airflow DAGs to automate the execution of the Python scripts created in steps 5 and 6.
 Ensure that the DAGs are properly scheduled to run at desired intervals.
-Conclusion
+
+**Conclusion**
 By following these steps, you will set up a data pipeline that fetches, stores, analyzes, and loads news data from Finnhub into MongoDB and PostgreSQL, all managed through Airflow. This setup enables efficient and automated data processing and analysis.
